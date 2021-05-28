@@ -115,3 +115,18 @@ void displayarr(const int arr[], const int size) {
 
     cout << "\nThe total is: " << sum;
 }
+int sumodd(const int arr[], const int size) {
+    int i, sum = 0;
+
+    for (i = 0; i < size; ++i)
+    {
+        if (arr[i] % 2 != 0)
+        {
+            sum += arr[i];
+        }
+    }
+
+    cout << "sum of odd arrays is" << sum;
+    return 0;
+
+}
