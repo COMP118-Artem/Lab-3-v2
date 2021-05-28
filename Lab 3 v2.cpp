@@ -59,3 +59,25 @@ int main() {
     cout << "\nHave a nice day:)" << endl;
     return 0;
 }
+int printMenu() {
+    int choice;
+
+    do {
+        cout << "\n === MENU ===";
+        cout << "\n1) Enter quantity";
+        cout << "\n2) Calculate total";
+        cout << "\n3) Print total";
+        cout << "\n4) Print the total sum of odd arrays";
+        cout << "\n5) Positive numbers";
+        cout << "\n6) Average of odd numbers";
+        cout << "\n7) Exit";
+        cout << "\nEnter the choice: ";
+
+        cin >> choice;
+
+        if (choice < 1 || choice > 7) {
+            cout << "\nWrong choice, try again.";
+        }
+    } while (choice < 1 || choice > 7);
+    return choice;
+}
