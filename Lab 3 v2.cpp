@@ -130,3 +130,14 @@ int sumodd(const int arr[], const int size) {
     return 0;
 
 }
+bool allisposit(const int arr[], const int size) {
+
+    for (int i = 0; i < size; ++i)
+    {
+        if (arr[i] < 0)
+            return false;
+    }
+
+
+    return true;
+}
