@@ -90,3 +90,17 @@ void fillinarr(int arr[], const int size) {
         cin >> arr[i];
     }
 }
+void multarr(const int arrQuantity[], const int arrPrice[], int arrTotal[], const int size) {
+    assert(size > 0);
+
+
+
+    for (int i = 0; i <= size; ++i) {
+        arrTotal[i] = arrQuantity[i] * arrPrice[i];
+
+        cout << "total price for the array at" << i << " : " << arrTotal[i] << endl;
+    }
+
+
+
+}
