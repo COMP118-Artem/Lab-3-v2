@@ -81,3 +81,12 @@ int printMenu() {
     } while (choice < 1 || choice > 7);
     return choice;
 }
+
+void fillinarr(int arr[], const int size) {
+    assert(size > 0);
+
+    for (int i = 0; i < size; ++i) {
+        cout << "\nEnter an element for the array at " << i << ": ";
+        cin >> arr[i];
+    }
+}
