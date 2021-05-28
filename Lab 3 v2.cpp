@@ -104,3 +104,14 @@ void multarr(const int arrQuantity[], const int arrPrice[], int arrTotal[], cons
 
 
 }
+void displayarr(const int arr[], const int size) {
+    int sum = 0;
+
+    for (int i = 0; i < size; ++i) {
+        cout << "\nValue at " << i << ": " << arr[i];
+
+        sum += arr[i];
+    }
+
+    cout << "\nThe total is: " << sum;
+}
