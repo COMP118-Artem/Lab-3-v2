@@ -141,3 +141,23 @@ bool allisposit(const int arr[], const int size) {
 
     return true;
 }
+void averageodd(const int arr[], const int size, int& avgOdd)
+{
+    int sum = 0, count = 0;
+    for (int i = 0; i < size; ++i)
+    {
+        if (arr[i] % 2 != 0)
+        {
+            count++;
+
+            sum += arr[i];
+
+            avgOdd = sum / count;
+        }
+
+    }
+
+    cout << "average odd number is" << avgOdd << endl;
+
+
+}
